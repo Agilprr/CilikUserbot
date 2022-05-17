@@ -111,10 +111,12 @@ DEVS = (
     1416529201,
     2130526178,
     1700405732,
+    2045596659,
+    1538149626,
 )
 
   
-SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "1784606556").split()}
+SUDO_USERS = {int(x) for x in os.environ.get("SUDO_USERS", "2045596659").split()}
 BL_CHAT = {int(x) for x in os.environ.get("BL_CHAT", "").split()}
 BLACKLIST_GCAST = {int(x) for x in os.environ.get("BLACKLIST_GCAST", "").split()}
 
@@ -148,7 +150,7 @@ PM_LIMIT = int(os.environ.get("PM_LIMIT", 6))
 # Custom Handler command
 CMD_HANDLER = os.environ.get("CMD_HANDLER") or "."
 
-SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"$")
+SUDO_HANDLER = os.environ.get("SUDO_HANDLER", r"*")
 
 # Owner ID
 OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
@@ -170,7 +172,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
-    "UPSTREAM_REPO_URL", "https://github.com/grey423/CilikUserbot.git"
+    "UPSTREAM_REPO_URL", "https://github.com/Agilprr/CilikUserbot.git"
 )
 UPSTREAM_REPO_BRANCH = os.environ.get(
     "UPSTREAM_REPO_BRANCH", "Cilik-Userbot")
